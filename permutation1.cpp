@@ -22,9 +22,11 @@ vector<string> permute(vector<string> arr, vector<char> vec2){
 int main(){
 	//vector<vector<char>> data{{'a','b','c'},{'i','j'} , {'x','y'}};  Dummy Data
 	
+	string fileName;
+	getline(cin,fileName);
 	vector < vector<char>> data;
 	string line;
-	ifstream file("input.csv");
+	ifstream file(fileName);
 	
 	while (getline(file, line))
 	{
